@@ -126,7 +126,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 1500); // 1000ms = 1 second delay between actions
+                    }, index * 1000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
