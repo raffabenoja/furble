@@ -66,7 +66,7 @@
             <button onclick='triggerAction(71,0,0,6)'>Ti</button>
             <button onclick='triggerAction(71,0,0,7)'>Do</button>
         </div>
-        <p>
+        <p style='font-size:8px;'>
             Cheatsheet: <br>
             Do, Do, Re, Do, Fa, Mi <br>
             Do, Do, Re, Do, Sol, Fa <br>
@@ -74,8 +74,16 @@
             Ti, Ti, La, Fa, Sol, Fa
         </p> 
 
-        <!-- Experimental -->
-        <script>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='8'>
+            <input type='number' min='0' max='4' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
+            <button onclick='customAction()'>Send</button>
+        </div>
+
+         <!-- Experimental -->
+         <script>
             function triggerAction(a, b, c, d) {
                 console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
                 // Add your action logic here
@@ -118,7 +126,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 100); // 1000ms = 1 second delay between actions
+                    }, index * 1500); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -126,16 +134,6 @@
             <button onclick='executeAllActions()'>Destroy Furby</button>
         </div>
         <!-- End experimental -->
-
-
-
-        <div class='row'>
-            <input type='number' min='0' max='75' name='furby-action' value='8'>
-            <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='0'>
-            <input type='number' min='0' max='10' name='furby-action' value='0'>
-            <button onclick='customAction()'>Send</button>
-        </div>
     </section>
 
     <section id='debug'>
