@@ -1,4 +1,11 @@
 [
+    {
+        "file": "new-one.dlc", 
+        "title": "New Test",
+        "buttons": [
+            { "title": "New Test ", "action": [75,0,4,4] }
+        ]
+    },
     { 
         "file": "context.dlc", 
         "title": "Context Logo",
