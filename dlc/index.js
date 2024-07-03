@@ -9,7 +9,7 @@
             { "title": "Pee", "action": [75,0,6,5] },
             { "title": "Listen", "action": [75,0,5,6] },
             { "title": "Spit", "action": [75,0,6,6] },
-            { "title": "Snotling", "action": [75,0,4,5] },
+            { "title": "Snortling", "action": [75,0,4,5] },
             { "title": "Top Ork", "action": [75,0,4,6] },
             { "title": "Snivel", "action": [75,0,7,6] },
             { "title": "Void", "action": [75,0,0,3] },
@@ -30,7 +30,7 @@
         "file": "EvilSeed.dlc", 
         "title": "Evil Seed",
         "buttons": [
-            { "title": "What have you done?", "action": [75,0,0,2] }
+            { "title": "Very Long Song", "action": [75,0,0,2] }
         ]
     },
     { 
@@ -57,7 +57,7 @@
     },
     { 
         "file": "hacked.dlc", 
-        "title": "HACKED",
+        "title": "Daleks!",
         "buttons": [
             { "title": "Exterminate", "action": [75,0,3,4] },
             { "title": "Kill all Humans", "action": [75,0,4,4] }
