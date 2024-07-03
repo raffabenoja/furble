@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Furby Web Bluetooth</title>
+    <title>Raff's Furby Web Bluetooth</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='furble.css'>
 </head>
@@ -52,8 +52,85 @@
             <button onclick='triggerAction(39,4,6,1)'>Nice</button>
             <button onclick='triggerAction(39,3,1,1)'>Hey, hey</button>
         </div>
+
+        
         <div class='row'>
-            <input type='number' min='0' max='75' name='furby-action' value='39'>
+            <button onclick='triggerAction(71,0,0,0)'>Do</button>
+            <button onclick='triggerAction(71,0,0,1)'>Re</button>
+            <button onclick='triggerAction(71,0,0,2)'>Mi</button>
+            <button onclick='triggerAction(71,0,0,3)'>Fa</button>
+        </div>
+        <div class='row'>
+            <button onclick='triggerAction(71,0,0,4)'>So</button>
+            <button onclick='triggerAction(71,0,0,5)'>La</button>
+            <button onclick='triggerAction(71,0,0,6)'>Ti</button>
+            <button onclick='triggerAction(71,0,0,7)'>Do</button>
+        </div>
+        <p>
+            Cheatsheet: <br>
+            Do, Do, Re, Do, Fa, Mi <br>
+            Do, Do, Re, Do, Sol, Fa <br>
+            Do, Do, Do, La, Fa, Mi, Re <br>
+            Ti, Ti, La, Fa, Sol, Fa
+        </p> 
+
+        <!-- Experimental -->
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+    
+            function executeAllActions() {
+                const actions = [
+                    // Do, Do, Re, Do, Fa, Mi
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 1],
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 3],
+                    [71, 0, 0, 2],
+                    // Do, Do, Re, Do, Sol, Fa
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 1],
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 4],
+                    [71, 0, 0, 3],
+                    // Do, Do, Do, La, Fa, Mi, Re
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 0],
+                    [71, 0, 0, 7],
+                    [71, 0, 0, 5],
+                    [71, 0, 0, 3],
+                    [71, 0, 0, 2],
+                    [71, 0, 0, 1],
+                    // Ti, Ti, La, Fa, Sol, Fa
+                    [71, 0, 0, 6],
+                    [71, 0, 0, 6],
+                    [71, 0, 0, 5],
+                    [71, 0, 0, 3],
+                    [71, 0, 0, 4],
+                    [71, 0, 0, 3]
+                    // Add more actions as needed
+                ];
+    
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 100); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+        <div class='row'>
+            <button onclick='executeAllActions()'>Destroy Furby</button>
+        </div>
+        <!-- End experimental -->
+
+
+
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='8'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
             <input type='number' min='0' max='30' name='furby-action' value='0'>
             <input type='number' min='0' max='10' name='furby-action' value='0'>
