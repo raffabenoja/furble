@@ -66,10 +66,10 @@
             <button onclick='triggerAction(71,0,0,6)'>Ti</button>
             <button onclick='triggerAction(71,0,0,7)'>Do</button>
         </div>
-        <p style='font-size:8px; color:#9f9f9f;'>
-            Do, Do, Re, Do, Fa, Mi <br>
+        <p style='font-size:8px; color:#dedede;'>
+            Do, Do, Re, Do, Fa, Mi <span style='margin-right:30px;'></span>
             Do, Do, Re, Do, Sol, Fa <br>
-            Do, Do, Do, La, Fa, Mi, Re <br>
+            Do, Do, Do, La, Fa, Mi, Re <span style='margin-right:30px;'></span>
             Ti, Ti, La, Fa, Sol, Fa
         </p> 
 
@@ -125,12 +125,12 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 1200); // 1000ms = 1 second delay between actions
+                    }, index * 1000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
-        <div class='row'>
-            <button onclick='executeAllActions()'>Destroy Furby</button>
+        <div class='row' style='margin-top:100px;'>
+            <button onclick='executeAllActions()'>Glitched</button>
         </div>
         <!-- End experimental -->
     </section>
