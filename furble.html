@@ -21,6 +21,7 @@
         <li><a href='#dlc'>DLC Upload</a></li>
         <li><a href='#sensors'>Sensors</a></li>
         <li><a href='#debug'>Debug</a></li>
+        <li><a href='#shortcuts'>Shortcuts</a></li>
     </ul>
 </div>
 
@@ -81,8 +82,31 @@
             <button onclick='customAction()'>Send</button>
         </div>
 
-         <!-- Experimental -->
-         <script>
+    </section>
+
+    <section id='debug'>
+        <h2>Debug</h2>
+        <div class='row'>
+            <button onclick='cycleDebug()'>Eye Debug</button>
+            <button onclick='enableEyes(false)'>Eyes off</button>
+            <button onclick='enableEyes(true)'>Eyes on</button>
+        </div>
+    </section>
+
+    <section id='dlc'>
+        <h2>DLC Files</h2>
+        <div class='row'>
+            <select id='dlcname'></select>
+            <button onclick='dlcUploadClicked()'>Upload</button>
+        </div>
+        <progress id='dlcprogress'></progress>
+    </section>
+
+    <section id='shortcuts' style='overflow:scroll;'>
+        <h2>Buttons for Shortcuts</h2>
+
+        <!-- Experimental -->
+        <script>
             function triggerAction(a, b, c, d) {
                 console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
                 // Add your action logic here
@@ -177,30 +201,52 @@
                 });
             }
          </script>
-         <div class='row' style='margin-top:40px;'>
-            <button onclick='executeAllActionsFirst()'>Glitched 1</button>
-            <button onclick='executeAllActionsSecond()'>Glitched 2</button>
+         <div class='row'>
+            <button onclick='executeAllActionsFirst()'>Song 1st Furb</button>
+            <button onclick='executeAllActionsSecond()'>Song 2nd Furb</button>
          </div>
          <!-- End experimental -->
 
-    </section>
-
-    <section id='debug'>
-        <h2>Debug</h2>
-        <div class='row'>
-            <button onclick='cycleDebug()'>Eye Debug</button>
-            <button onclick='enableEyes(false)'>Eyes off</button>
-            <button onclick='enableEyes(true)'>Eyes on</button>
+         <!-- Dreams -->
+         <div class='row' style='margin-top:20px;'>
+            <p>Dreams with snores:</p><br/>
+            <button onclick='triggerAction(74,0,3,1)'>Pirate 1</button>
+            <button onclick='triggerAction(74,0,3,2)'>Pirate 2</button>
+            <button onclick='triggerAction(74,0,2,1)'>Ninja 1</button>
+            <button onclick='triggerAction(74,0,2,2)'>Ninja 2</button>
         </div>
-    </section>
-
-    <section id='dlc'>
-        <h2>DLC Files</h2>
         <div class='row'>
-            <select id='dlcname'></select>
-            <button onclick='dlcUploadClicked()'>Upload</button>
+            <button onclick='triggerAction(74,0,5,0)'>Meow</button>
+            <button onclick='triggerAction(74,0,5,2)'>Purr</button>
+            <button onclick='triggerAction(74,0,0,1)'>Beatbox</button>
+            <button onclick='triggerAction(74,0,4,1)'>Celeb</button>
         </div>
-        <progress id='dlcprogress'></progress>
+
+        <!-- Singing -->
+        <div class='row' style='margin-top:20px;'>
+            <p>Singing Furb:</p><br/>
+            <button onclick='triggerAction(17,0,0,4)'>Long Sing</button>
+            <button onclick='triggerAction(17,1,0,3)'>Low Batt</button>
+            <button onclick='triggerAction(17,2,0,4)'>Electric</button>
+            <button onclick='triggerAction(17,3,0,4)'>Furbarin</button>
+        </div>
+
+        <!-- Random -->
+        <div class='row' style='margin-top:20px;'>
+            <p>Random</p><br/>
+            <button onclick='triggerAction(29,0,0,3)'>Check</button>
+            <button onclick='triggerAction(39,0,1,3)'>Ermagerd</button>
+            <button onclick='triggerAction(39,1,13,1)'>Fox Pants</button>
+            <button onclick='triggerAction(1,1,0,3)'>Wookie Yawn</button>
+        </div>
+        <div class='row'>
+            <button onclick='triggerAction(18,0,0,1)'>Dance 1</button>
+            <button onclick='triggerAction(18,0,0,4)'>Dance 2</button>
+            <button onclick='triggerAction(18,0,0,7)'>Dance 3</button>
+            <button onclick='triggerAction(18,0,0,17)'>Dance 4</button>
+        </div>
+
+
     </section>
 
     <section id='sensors'>
