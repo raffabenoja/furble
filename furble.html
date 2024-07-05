@@ -61,14 +61,16 @@
             <button onclick='triggerAction(71,0,0,3)'>Fa</button>
         </div>
         <div class='row'>
-            <button onclick='triggerAction(71,0,0,4)'>So</button>
+            <button onclick='triggerAction(71,0,0,4)'>Sol</button>
             <button onclick='triggerAction(71,0,0,5)'>La</button>
             <button onclick='triggerAction(71,0,0,6)'>Ti</button>
             <button onclick='triggerAction(71,0,0,7)'>Do</button>
         </div>
         <p style='font-size:8px; color:#dedede;'>
-            Do, Do, Re, Do, Fa, Mi, <span style='margin-right:30px;'></span> Do, Do, Re, Do, Sol, Fa <br>
-            Do, Do, Do, La, Fa, Mi, Re, <span style='margin-right:30px;'></span> Ti, Ti, La, Fa, Sol, Fa
+            Do, Do, Re, Do, Fa, Mi <span style='margin-right:30px;'></span>
+            Do, Do, Re, Do, Sol, Fa <br>
+            Do, Do, Do, La, Fa, Mi, Re <span style='margin-right:30px;'></span>
+            Ti, Ti, La, Fa, Sol, Fa
         </p> 
 
         <div class='row'>
@@ -86,51 +88,103 @@
                 // Add your action logic here
             }
     
-            function executeAllActions() {
+            function executeAllActionsFirst() {
                 const actions = [
                     // Do, Do, Re, Do, Fa, Mi
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 1],
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 3],
-                    [71, 0, 0, 2],
+                    [71, 0, 0, 0], //Do
+                    
+                    [71, 0, 0, 1], //Re
+                    
+                    [71, 0, 0, 3], //Fa
+                    
                     // Do, Do, Re, Do, Sol, Fa
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 1],
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 4],
-                    [71, 0, 0, 3],
+                    [71, 0, 0, 0], //Do
+                    
+                    [71, 0, 0, 1], //Re
+                    
+                    [71, 0, 0, 4], //Sol
+                    
                     // Do, Do, Do, La, Fa, Mi, Re
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 0],
-                    [71, 0, 0, 7],
-                    [71, 0, 0, 5],
-                    [71, 0, 0, 3],
-                    [71, 0, 0, 2],
-                    [71, 0, 0, 1],
+                    [71, 0, 0, 0], //Do
+                    
+                    [71, 0, 0, 7], //Do
+                    
+                    [71, 0, 0, 3], //Fa
+                    
+                    [71, 0, 0, 1], //Re
                     // Ti, Ti, La, Fa, Sol, Fa
-                    [71, 0, 0, 6],
-                    [71, 0, 0, 6],
-                    [71, 0, 0, 5],
-                    [71, 0, 0, 3],
-                    [71, 0, 0, 4],
-                    [71, 0, 0, 3]
+                    
+                    [71, 0, 0, 6], //Ti
+                    
+                    [71, 0, 0, 3], //Fa
+                    
+                    [71, 0, 0, 3] //Fa
                     // Add more actions as needed
                 ];
     
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 1000); // 1000ms = 1 second delay between actions
+                    }, index * 2000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
         <div class='row' style='margin-top:100px;'>
-            <button onclick='executeAllActions()'>Glitched</button>
+            <button onclick='executeAllActionsFirst()'>Glitched 1</button>
         </div>
-        <!-- End experimental -->
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+         
+            function executeAllActionsSecond() {
+                const actions = [
+                    // Do, Do, Re, Do, Fa, Mi
+                    
+                    [71, 0, 0, 0], //Do
+                    
+                    [71, 0, 0, 0], //Do
+                    
+                    [71, 0, 0, 2], //Mi
+                    // Do, Do, Re, Do, Sol, Fa
+                    
+                    [71, 0, 0, 0], //Do
+         
+                    [71, 0, 0, 0], //Do
+         
+                    [71, 0, 0, 3], //Fa
+                    // Do, Do, Do, La, Fa, Mi, Re
+         
+                    [71, 0, 0, 0], //Do
+         
+                    [71, 0, 0, 5], //La
+         
+                    [71, 0, 0, 2], //Mi
+         
+                    // Ti, Ti, La, Fa, Sol, Fa
+                    [71, 0, 0, 6], //Ti
+         
+                    [71, 0, 0, 5], //La
+         
+                    [71, 0, 0, 4], //Sol
+         
+                    // Add more actions as needed
+                ];
+         
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 2000); // 1000ms = 1 second delay between actions
+                });
+            }
+         </script>
+         <div class='row' style='margin-top:40px;'>
+            <button onclick='executeAllActionsSecond()'>Glitched 2</button>
+         </div>
+         <!-- End experimental -->
+
     </section>
 
     <section id='debug'>
