@@ -19,6 +19,18 @@
         ]
     },
     {
+        "file": "TU011090.dlc", 
+        "title": "Song Pack 1",
+        "buttons": [
+            { "title": "WeDontTalk1", "action": [75,0,2,1] },
+            { "title": "WeDontTalk2", "action": [75,0,2,3] },
+            { "title": "PartyRock1", "action": [75,0,1,1] },
+            { "title": "PartyRock2", "action": [75,0,1,3] },
+            { "title": "BoyWeightLifter", "action": [75,0,3,1] },
+            
+        ]
+    },
+    {
         "file": "Waaagh.dlc", 
         "title": "Waaaagh",
         "buttons": [
@@ -70,17 +82,4 @@
             { "title": "Audio test ", "action": [75,0,4,4] }
         ]
     },
-    
-    {
-        "file": "songs1.dlc", 
-        "title": "songs 1",
-        "buttons": [
-            { "title": "WeDontTalk1", "action": [75,0,2,1] },
-            { "title": "WeDontTalk2", "action": [75,0,2,3] },
-            { "title": "PartyRock1", "action": [75,0,1,1] },
-            { "title": "PartyRock2", "action": [75,0,1,3] },
-            { "title": "BoyWeightLifter", "action": [75,0,3,1] },
-            
-        ]
-    }
 ]
