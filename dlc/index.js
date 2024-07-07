@@ -19,7 +19,7 @@
         ]
     },
     {
-        "file": "TU011090.dlc", 
+        "file": "tu011090.dlc", 
         "title": "Song Pack 1",
         "buttons": [
             { "title": "WeDontTalk1", "action": [75,0,2,1] },
