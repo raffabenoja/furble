@@ -27,7 +27,7 @@
     },
     {
         "file": "TU011090.dlc", 
-        "title": "Songs 1",
+        "title": "Songs Pack 1",
         "buttons": [
             { "title": "wedonttalk", "action": [75,0,2,3] },
             { "title": "partyrock", "action": [75,0,1,1] },
