@@ -1,5 +1,14 @@
 [
     {
+        "file": "tu011090.dlc", 
+        "title": "Songs Pack 1",
+        "buttons": [
+            { "title": "wedonttalk", "action": [75,0,2,3] },
+            { "title": "partyrock", "action": [75,0,1,1] },
+            { "title": "boylifter", "action": [75,0,3,1] }
+        ]
+    },
+    {
         "file": "Orks.dlc", 
         "title": "Orks",
         "buttons": [
@@ -23,15 +32,6 @@
         "title": "Waaaagh",
         "buttons": [
             { "title": "WAAAAAAGH!", "action": [75,0,0,2] }
-        ]
-    },
-    {
-        "file": "TU011090.dlc", 
-        "title": "Songs Pack 1",
-        "buttons": [
-            { "title": "wedonttalk", "action": [75,0,2,3] },
-            { "title": "partyrock", "action": [75,0,1,1] },
-            { "title": "boylifter", "action": [75,0,3,1] }
         ]
     },
     
