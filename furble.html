@@ -21,7 +21,8 @@
         <li><a href='#dlc'>DLC Upload</a></li>
         <li><a href='#sensors'>Sensors</a></li>
         <li><a href='#debug'>Debug</a></li>
-        <li><a href='#shortcuts'>Shortcuts</a></li>
+        <li><a href='#shortcuts1'>Shortcuts 1</a></li>
+        <li><a href='#shortcuts2'>Shortcuts 2</a></li>
     </ul>
 </div>
 
@@ -102,7 +103,7 @@
         <progress id='dlcprogress'></progress>
     </section>
 
-    <section id='shortcuts' style='overflow:scroll;'>
+    <section id='shortcuts1' style='overflow:scroll;'>
         <h2>Buttons for Shortcuts</h2>
 
         <!-- Experimental -->
@@ -202,7 +203,9 @@
             }
          </script>
          <div class='row'>
-            <button onclick='executeAllActionsFirst()'>Song 1st Furb</button>
+            <!-- Click this first -->
+            <button onclick='executeAllActionsFirst()'>Song 1st Furb</button> 
+            <!-- Click this second -->
             <button onclick='executeAllActionsSecond()'>Song 2nd Furb</button>
          </div>
          <!-- End experimental -->
@@ -231,6 +234,11 @@
             <button onclick='triggerAction(17,3,0,4)'>Furbarin</button>
         </div>
 
+    </section>
+
+    <section id='shortcuts2' style='overflow:scroll;'>
+        <h2>Buttons for Shortcuts</h2>
+
         <!-- Random -->
         <div class='row' style='margin-top:20px;'>
             <p>Random</p><br/>
@@ -245,8 +253,6 @@
             <button onclick='triggerAction(18,0,0,7)'>Dance 3</button>
             <button onclick='triggerAction(18,0,0,17)'>Dance 4</button>
         </div>
-
-
     </section>
 
     <section id='sensors'>
