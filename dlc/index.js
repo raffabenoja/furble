@@ -1,12 +1,12 @@
 [
     {
         "file": "songs1.dlc", 
-        "title": "We Dont Talk Anymore/Party Rock",
+        "title": "songs 1",
         "buttons": [
-            { "title": "We Don't Talk Anymore", "action": [75,0,2,1] },
-            { "title": "We Don't Talk Anymore 2", "action": [75,0,2,3] },
-            { "title": "Party Rock", "action": [75,0,1,1] },
-            { "title": "Party Rock 2", "action": [75,0,1,3] },
+            { "title": "WeDontTalk1", "action": [75,0,2,1] },
+            { "title": "WeDontTalk2", "action": [75,0,2,3] },
+            { "title": "PartyRock1", "action": [75,0,1,1] },
+            { "title": "PartyRock2", "action": [75,0,1,3] },
             { "title": "BoyWeightLifter", "action": [75,0,3,1] },
             
         ]
