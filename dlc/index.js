@@ -17,12 +17,12 @@
             { "title": "partyrock5", "action": [75,0,1,5] },
             { "title": "partyrock6", "action": [75,0,1,6] },
             { "title": "partyrock7", "action": [75,0,1,7] },
-            { "title": "boylifter1", "action": [75,0,3,1] }
-            { "title": "boylifter2", "action": [75,0,3,2] }
-            { "title": "boylifter3", "action": [75,0,3,3] }
-            { "title": "boylifter4", "action": [75,0,3,4] }
-            { "title": "boylifter5", "action": [75,0,3,5] }
-            { "title": "boylifter6", "action": [75,0,3,6] }
+            { "title": "boylifter1", "action": [75,0,3,1] },
+            { "title": "boylifter2", "action": [75,0,3,2] },
+            { "title": "boylifter3", "action": [75,0,3,3] },
+            { "title": "boylifter4", "action": [75,0,3,4] },
+            { "title": "boylifter5", "action": [75,0,3,5] },
+            { "title": "boylifter6", "action": [75,0,3,6] },
             { "title": "boylifter7", "action": [75,0,3,7] }
         ]
     },
@@ -57,7 +57,7 @@
             { "title": "stillintoyou5", "action": [75,0,1,5] },
             { "title": "stillintoyou6", "action": [75,0,1,6] },
             { "title": "stillintoyou7", "action": [75,0,1,7] },
-            
+
             { "title": "callmemaybe1", "action": [75,0,2,1] },
             { "title": "callmemaybe2", "action": [75,0,2,2] },
             { "title": "callmemaybe3", "action": [75,0,2,3] },
