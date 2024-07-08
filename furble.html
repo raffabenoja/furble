@@ -261,6 +261,7 @@
     <section id='songs1' style='overflow:scroll;'>
         <h2>Songs Pack 1:</h2>
         <p>Only works if you have We Don't Talk Anymore / Party Rock DLC loaded</p>
+        <p>Bonus: Make Some Noise</p>
 
 
         <!-- Experimental -->
@@ -315,10 +316,36 @@
                 });
             }
         </script>
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+    
+            function makesomenoise() {
+                const actions = [
+                    [75, 0, 4, 1,], 
+                    [75, 0, 4, 2,], 
+                    [75, 0, 4, 3,], 
+                    [75, 0, 4, 4,], 
+                    [75, 0, 4, 5,], 
+                    [75, 0, 4, 6,], 
+                    [75, 0, 4, 7,] 
+                    // Add more actions as needed
+                ];
+    
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
 
          <div class='row'>
             <button onclick='wedonttalkanymore()'>We Don't Talk Anymore</button> 
             <button onclick='partyrock()'>Party Rock</button>
+            <button onclick='makesomenoise()'>Make Some Noise</button>
          </div>
          <!-- End experimental -->
 
@@ -327,6 +354,7 @@
     <section id='songs2' style='overflow:scroll;'>
         <h2>Songs Pack 2:</h2>
         <p>Only works if you have Can't Touch This / Jingle Bell Rock DLC loaded</p>
+        <p>Bonus: Down</p>
 
         <!-- Experimental -->
         <script>
@@ -380,10 +408,37 @@
                 });
             }
         </script>
+        
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function down() {
+                const actions = [
+                    [75, 0, 4, 1],
+                    [75, 0, 4, 2],
+                    [75, 0, 4, 3],
+                    [75, 0, 4, 4],
+                    [75, 0, 4, 5],
+                    [75, 0, 4, 6],
+                    [75, 0, 4, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
 
          <div class='row'>
             <button onclick='canttouchthis()'>Can't Touch This</button> 
             <button onclick='jinglebellrock()'>Jingle Bell Rock</button>
+            <button onclick='down()'>Down</button>
          </div>
          <!-- End experimental -->
 
@@ -392,6 +447,7 @@
     <section id='songs3' style='overflow:scroll;'>
         <h2>Songs Pack 3:</h2>
         <p>Only works if you have Still Into You / Call Me Maybe DLC loaded</p>
+        <p>Bonus: Riptide</p>
 
         <!-- Experimental -->
         <script>
