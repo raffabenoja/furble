@@ -1,7 +1,7 @@
 [
     {
         "file": "tu011090.dlc", 
-        "title": "Dont Talk / Part Rock",
+        "title": "Songs Pack 1",
         "buttons": [
             { "title": "wedonttalk1", "action": [75,0,2,1] },
             { "title": "wedonttalk2", "action": [75,0,2,2] },
@@ -28,7 +28,7 @@
     },
     {
         "file": "tu012750.dlc", 
-        "title": "Cant Touch / Jingle Bell Rock",
+        "title": "Songs Pack 2",
         "buttons": [
             { "title": "canttouchthis1", "action": [75,0,1,1] },
             { "title": "canttouchthis2", "action": [75,0,1,2] },
@@ -48,7 +48,7 @@
     },
     {
         "file": "tu012770.dlc", 
-        "title": "Still Into You / Call Me Maybe",
+        "title": "Songs Pack 3",
         "buttons": [
             { "title": "stillintoyou1", "action": [75,0,1,1] },
             { "title": "stillintoyou2", "action": [75,0,1,2] },
@@ -57,7 +57,6 @@
             { "title": "stillintoyou5", "action": [75,0,1,5] },
             { "title": "stillintoyou6", "action": [75,0,1,6] },
             { "title": "stillintoyou7", "action": [75,0,1,7] },
-
             { "title": "callmemaybe1", "action": [75,0,2,1] },
             { "title": "callmemaybe2", "action": [75,0,2,2] },
             { "title": "callmemaybe3", "action": [75,0,2,3] },
@@ -65,7 +64,6 @@
             { "title": "callmemaybe5", "action": [75,0,2,5] },
             { "title": "callmemaybe6", "action": [75,0,2,6] },
             { "title": "callmemaybe7", "action": [75,0,2,7] },
-
             { "title": "gangnam1", "action": [75,0,3,1] },
             { "title": "gangnam2", "action": [75,0,3,2] },
             { "title": "gangnam3", "action": [75,0,3,3] },
@@ -73,7 +71,6 @@
             { "title": "gangnam5", "action": [75,0,3,5] },
             { "title": "gangnam6", "action": [75,0,3,6] },
             { "title": "gangnam7", "action": [75,0,3,7] },
-
             { "title": "riptide1", "action": [75,0,4,1] },
             { "title": "riptide2", "action": [75,0,4,2] },
             { "title": "riptide3", "action": [75,0,4,3] },
