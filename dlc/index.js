@@ -1,5 +1,4 @@
-// Sample data (same as provided)
-const data = [
+[
     {
         "file": "tu011090.dlc", 
         "title": "Songs Pack 1",
@@ -152,32 +151,4 @@ const data = [
             { "title": "Audio test ", "action": [75,0,4,4] }
         ]
     }
-];
-
-// Function to generate buttons and manage their layout
-function generateButtons() {
-    const buttonContainer = document.createElement('div');
-    buttonContainer.className = 'button-container'; // Add a class for styling if needed
-
-    // Iterate through each button data and create buttons
-    data[0].buttons.forEach(buttonData => {
-        const button = document.createElement('button');
-        button.textContent = buttonData.title;
-        buttonContainer.appendChild(button);
-    });
-
-    // Apply CSS for button container to ensure buttons wrap instead of overflow
-    buttonContainer.style.display = 'flex';
-    buttonContainer.style.flexWrap = 'wrap';
-    buttonContainer.style.maxWidth = '100%'; // Adjust as needed
-
-    // Add margin between buttons for spacing
-    const buttonMargin = '5px';
-    buttonContainer.style.margin = `-${buttonMargin} 0 0 -${buttonMargin}`;
-
-    // Add the button container to the document body or any desired parent element
-    document.body.appendChild(buttonContainer);
-}
-
-// Call the function to generate buttons
-generateButtons();
+]
