@@ -2,30 +2,31 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Raff's Furby Web Bluetooth</title>
+    <title>Raff's Custom Furby Web Bluetooth</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='furble.css'>
 </head>
 <body>
 
 <!-- for slide-in status messages -->
-<div id='status' class='ok'>Connected!</div>
+<div id='status' class='ok'>Furby Connected!</div>
 
 <!-- menu button and menu -->
 <button id='hamburger'>☰</button>
 <div id='menu'>
-    <h2>FurBLE</h2>
+    <h2>Raff's Custom FurBLE</h2>
     <ul>
-        <li><a href='#actions'>Actions</a></li>
-        <li><a href='#misc'>Misc</a></li>
         <li><a href='#dlc'>DLC Upload</a></li>
-        <li><a href='#sensors'>Sensors</a></li>
-        <li><a href='#debug'>Debug</a></li>
-        <li><a href='#shortcuts1'>Shortcuts 1</a></li>
-        <li><a href='#shortcuts2'>Shortcuts 2</a></li>
-        <li><a href='#songs1'>Song Pack 1: <br> <span style='font-size:10px;'> <i> We Dont Talk Anymore / Party Rock / Make Some Noise</i></span></a></li>
-        <li><a href='#songs2'>Song Pack 2: <br> <span style='font-size:10px;'> <i> U Can't Touch This / Jingle Bell Rock / Down</i></span></a></li>
-        <li><a href='#songs3'>Song Pack 3: <br> <span style='font-size:10px;'> <i> Still Into You / Call Me Maybe / Riptide</i></span></a></li>
+        <li><a href='#songs1'>DLC Buttons: Song Pack 1<br> <span style='font-size:10px;'> <i> We Dont Talk Anymore / Party Rock / Make Some Noise</i></span></a></li>
+        <li><a href='#songs2'>DLC Buttons: Song Pack 2<br> <span style='font-size:10px;'> <i> U Can't Touch This / Jingle Bell Rock / Down</i></span></a></li>
+        <li><a href='#songs3'>DLC Buttons: Song Pack 3<br> <span style='font-size:10px;'> <i> Still Into You / Call Me Maybe / Riptide</i></span></a></li>
+
+        <li><a href='#dlcactions'>DLC Actions<br> <span style='font-size:10px;'> <i> DLC buttons appear here once DLC is activated</i></span></a></li>
+        <li><a href='#actions'>Send Custom Actions<br> <span style='font-size:10px;'> <i> Birthday Song / Sleeping / Random Singing</i></span></a></li>
+        <li><a href='#shortcuts1'>Pre-built Actions 1<br> <span style='font-size:10px;'> <i> Birthday Song / Sleeping / Random Singing</i></span></a></li>
+        <li><a href='#shortcuts2'>Pre-built Actions 2<br> <span style='font-size:10px;'> <i> Random Voices / Silent Dancing</i></span></a></li>
+
+        <li><a href='#misc'>Miscellaneous<br> <span style='font-size:10px;'> <i> Antenna Color / Debug Menu / Sensors</i></span></a></li>
     </ul>
 </div>
 
@@ -47,18 +48,45 @@
             <button onclick='setAntennaColor(0, 0, 255)'>Blue</button>
             <button onclick='setAntennaColor(255, 255, 255)'>White</button>
         </div>
+        <h2>Debug</h2>
+        <div class='row'>
+            <button onclick='cycleDebug()'>Eye Debug</button>
+            <button onclick='enableEyes(false)'>Eyes off</button>
+            <button onclick='enableEyes(true)'>Eyes on</button>
+        </div>
+        <h2>Sensors</h2>
+        <!--<div class='row'>
+                <button onclick='sendGPCmd([0x20, 0x0d])'>Start continuous</button>
+                <button onclick='sendGPCmd([0x20, 0x0e])'>Stop continuous</button>
+        </div>
+        <h2>State</h2>-->
+        <ul id='sensor-state'><li>Waiting for connection...</li></ul>
+    </section>
+
+    <section id='dlcactions'>
+        <h2>DLC Buttons</h2>
+        <div class='row' id='dlc-actions' style='max-width:100% !important;'></div>
+
+        <p>Send custom DLC actions. Note that most DLC commands start with "75, 0, n, n."</p>
+        <div class='row'>
+            <input type='number' min='75' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='0' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+            <button onclick='customAction()'>Send</button>
+        </div>
     </section>
 
     <section id='actions'>
         <h2>Action Sequences</h2>
-        <div class='row' id='dlc-actions'></div>
         <div class='row'>
             <button onclick='triggerAction(39,3,8,1)'>Legendary!</button>
             <button onclick='triggerAction(39,4,6,1)'>Nice</button>
-            <button onclick='triggerAction(39,3,1,1)'>Hey, hey</button>
+            <button onclick='triggerAction(39,3,1,1)'>Hey!</button>
+            <button onclick='triggerAction(8,0,0,0)'>Yaaas</button>
         </div>
 
-        
+        <h2>Solfège Syllables</h2>
         <div class='row'>
             <button onclick='triggerAction(71,0,0,0)'>Do</button>
             <button onclick='triggerAction(71,0,0,1)'>Re</button>
@@ -71,30 +99,22 @@
             <button onclick='triggerAction(71,0,0,6)'>Ti</button>
             <button onclick='triggerAction(71,0,0,7)'>Do</button>
         </div>
-        <p style='font-size:8px; color:#dedede;'>
+        <p style='font-size:10px; color:#dedede;'>
             Do, Do, Re, Do, Fa, Mi <span style='margin-right:30px;'></span>
             Do, Do, Re, Do, Sol, Fa <br>
             Do, Do, Do, La, Fa, Mi, Re <span style='margin-right:30px;'></span>
             Ti, Ti, La, Fa, Sol, Fa
         </p> 
 
+        <p>Send Custom Commands</p>
         <div class='row'>
-            <input type='number' min='0' max='75' name='furby-action' value='8'>
+            <input type='number' min='0' max='75' name='furby-action' value='75'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='0'>
-            <input type='number' min='0' max='10' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
             <button onclick='customAction()'>Send</button>
         </div>
 
-    </section>
-
-    <section id='debug'>
-        <h2>Debug</h2>
-        <div class='row'>
-            <button onclick='cycleDebug()'>Eye Debug</button>
-            <button onclick='enableEyes(false)'>Eyes off</button>
-            <button onclick='enableEyes(true)'>Eyes on</button>
-        </div>
     </section>
 
     <section id='dlc'>
@@ -104,10 +124,19 @@
             <button onclick='dlcUploadClicked()'>Upload</button>
         </div>
         <progress id='dlcprogress'></progress>
+        <h2>Read Me First</h2>
+        <p>Always remember to reset your Furby Connect before uploading any DLC. To do this:</p>
+        <ul>
+            <li>Turn your furby upside down.</li>
+            <li>Push its tongue and pull its tail for 10 seconds until it shuts down (eyes off, total silence).</li>
+            <li>If your furby doesn't shut down, try again.</li>
+        </ul>
+        <p>Check for the DLC button packs in the sidebar for easy access.</p>
+
     </section>
 
-    <section id='shortcuts1' style='overflow:scroll;'>
-        <h2>Buttons for Shortcuts</h2>
+    <section id='shortcuts1'>
+        <h2>Pre-built Actions 1</h2>
 
         <!-- Experimental -->
         <script>
@@ -153,7 +182,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 2000); // 1000ms = 1 second delay between actions
+                    }, index * 2500); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -201,15 +230,17 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 2000); // 1000ms = 1 second delay between actions
+                    }, index * 2500); // 1000ms = 1 second delay between actions
                 });
             }
          </script>
          <div class='row'>
-            <!-- Click this first -->
-            <button onclick='executeAllActionsFirst()'>Song 1st Furb</button> 
-            <!-- Click this second -->
-            <button onclick='executeAllActionsSecond()'>Song 2nd Furb</button>
+            <p>Click this first:</p>
+            <button onclick='executeAllActionsFirst()'>Birthday 1st Furb</button> 
+         </div>
+         <div class='row'>
+            <p>Click this second:</p>
+            <button onclick='executeAllActionsSecond()'>Birthday 2nd Furb</button>
          </div>
          <!-- End experimental -->
 
@@ -239,17 +270,18 @@
 
     </section>
 
-    <section id='shortcuts2' style='overflow:scroll;'>
-        <h2>Buttons for Shortcuts</h2>
+    <section id='shortcuts2'>
+        <h2>Pre-built Actions 2</h2>
 
         <!-- Random -->
-        <p style='margin-top:20px;'>Random</p>
+        <p style='margin-top:20px;'>Random Voices</p>
         <div class='row'>
             <button onclick='triggerAction(29,0,0,3)'>Check</button>
             <button onclick='triggerAction(39,0,1,3)'>Ermagerd</button>
             <button onclick='triggerAction(39,1,13,1)'>Fox Pants</button>
             <button onclick='triggerAction(1,1,0,3)'>Wookie Yawn</button>
         </div>
+        <p style='margin-top:20px;'>Silent Dancing</p>
         <div class='row'>
             <button onclick='triggerAction(18,0,0,1)'>Dance 1</button>
             <button onclick='triggerAction(18,0,0,4)'>Dance 2</button>
@@ -258,7 +290,7 @@
         </div>
     </section>
 
-    <section id='songs1' style='overflow:scroll;'>
+    <section id='songs1'>
         <h2>Songs Pack 1:</h2>
         <p>Only works if you have We Don't Talk Anymore / Party Rock DLC loaded</p>
         <p>Bonus: Make Some Noise</p>
@@ -347,11 +379,20 @@
             <button onclick='partyrock()'>Party Rock</button>
             <button onclick='makesomenoise()'>Make Some Noise</button>
          </div>
+
+        <p>Send custom DLC actions. Note that most DLC commands start with "75, 0, n, n."</p>
+        <div class='row'>
+            <input type='number' min='75' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='0' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+            <button onclick='customAction()'>Send</button>
+        </div>
          <!-- End experimental -->
 
     </section>
 
-    <section id='songs2' style='overflow:scroll;'>
+    <section id='songs2'>
         <h2>Songs Pack 2:</h2>
         <p>Only works if you have Can't Touch This / Jingle Bell Rock DLC loaded</p>
         <p>Bonus: Down</p>
@@ -440,11 +481,20 @@
             <button onclick='jinglebellrock()'>Jingle Bell Rock</button>
             <button onclick='down()'>Down</button>
          </div>
+
+         <p>Send custom DLC actions. Note that most DLC commands start with "75, 0, n, n."</p>
+         <div class='row'>
+            <input type='number' min='75' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='0' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+            <button onclick='customAction()'>Send</button>
+        </div>
          <!-- End experimental -->
 
     </section>
 
-    <section id='songs3' style='overflow:scroll;'>
+    <section id='songs3'>
         <h2>Songs Pack 3:</h2>
         <p>Only works if you have Still Into You / Call Me Maybe DLC loaded</p>
         <p>Bonus: Riptide</p>
@@ -533,18 +583,17 @@
             <button onclick='callmemaybe()'>Call Me Maybe</button>
             <button onclick='riptide()'>Riptide</button>
          </div>
+
+         <p>Send custom DLC actions. Note that most DLC commands start with "75, 0, n, n."</p>
+         <div class='row'>
+            <input type='number' min='75' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='0' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+            <button onclick='customAction()'>Send</button>
+        </div>
          <!-- End experimental -->
 
-    </section>
-
-    <section id='sensors'>
-        <h2>Sensors</h2>
-        <!--<div class='row'>
-                <button onclick='sendGPCmd([0x20, 0x0d])'>Start continuous</button>
-                <button onclick='sendGPCmd([0x20, 0x0e])'>Stop continuous</button>
-        </div>
-        <h2>State</h2>-->
-        <ul id='sensor-state'><li>Waiting for connection...</li></ul>
     </section>
 
     <section id='no-web-bluetooth'>
