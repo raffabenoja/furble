@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-    --bg-primary: rgb(243, 0, 170);
+    --bg-primary: rgb(0 117 243);;
 }
 
 body { font-family: sans }
@@ -47,7 +47,7 @@ button#hamburger {
     font-weight: bold;
     float: left; 
     margin-left: -18px; 
-    -margin-top: -10px;
+    margin-top: -10px;
     margin-right: -10px }
 body.keyboard #console { display: none }
 
