@@ -1,4 +1,5 @@
-[
+// Sample data (same as provided)
+const data = [
     {
         "file": "tu011090.dlc", 
         "title": "Songs Pack 1",
@@ -17,13 +18,13 @@
             { "title": "partyrock5", "action": [75,0,1,5] },
             { "title": "partyrock6", "action": [75,0,1,6] },
             { "title": "partyrock7", "action": [75,0,1,7] },
-            { "title": "boylifter1", "action": [75,0,3,1] },
-            { "title": "boylifter2", "action": [75,0,3,2] },
-            { "title": "boylifter3", "action": [75,0,3,3] },
-            { "title": "boylifter4", "action": [75,0,3,4] },
-            { "title": "boylifter5", "action": [75,0,3,5] },
-            { "title": "boylifter6", "action": [75,0,3,6] },
-            { "title": "boylifter7", "action": [75,0,3,7] }
+            { "title": "makesomenoise1", "action": [75,0,4,1] },
+            { "title": "makesomenoise2", "action": [75,0,4,2] },
+            { "title": "makesomenoise3", "action": [75,0,4,3] },
+            { "title": "makesomenoise4", "action": [75,0,4,4] },
+            { "title": "makesomenoise5", "action": [75,0,4,5] },
+            { "title": "makesomenoise6", "action": [75,0,4,6] },
+            { "title": "makesomenoise7", "action": [75,0,4,7] }
         ]
     },
     {
@@ -43,7 +44,14 @@
             { "title": "jinglebellrock4", "action": [75,0,2,4] },
             { "title": "jinglebellrock5", "action": [75,0,2,5] },
             { "title": "jinglebellrock6", "action": [75,0,2,6] },
-            { "title": "jinglebellrock7", "action": [75,0,2,7] }
+            { "title": "jinglebellrock7", "action": [75,0,2,7] },
+            { "title": "down1", "action": [75,0,4,1] },
+            { "title": "down2", "action": [75,0,4,2] },
+            { "title": "down3", "action": [75,0,4,3] },
+            { "title": "down4", "action": [75,0,4,4] },
+            { "title": "down5", "action": [75,0,4,5] },
+            { "title": "down6", "action": [75,0,4,6] },
+            { "title": "down7", "action": [75,0,4,7] }
         ]
     },
     {
@@ -64,13 +72,6 @@
             { "title": "callmemaybe5", "action": [75,0,2,5] },
             { "title": "callmemaybe6", "action": [75,0,2,6] },
             { "title": "callmemaybe7", "action": [75,0,2,7] },
-            { "title": "gangnam1", "action": [75,0,3,1] },
-            { "title": "gangnam2", "action": [75,0,3,2] },
-            { "title": "gangnam3", "action": [75,0,3,3] },
-            { "title": "gangnam4", "action": [75,0,3,4] },
-            { "title": "gangnam5", "action": [75,0,3,5] },
-            { "title": "gangnam6", "action": [75,0,3,6] },
-            { "title": "gangnam7", "action": [75,0,3,7] },
             { "title": "riptide1", "action": [75,0,4,1] },
             { "title": "riptide2", "action": [75,0,4,2] },
             { "title": "riptide3", "action": [75,0,4,3] },
@@ -151,4 +152,32 @@
             { "title": "Audio test ", "action": [75,0,4,4] }
         ]
     }
-]
+];
+
+// Function to generate buttons and manage their layout
+function generateButtons() {
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'button-container'; // Add a class for styling if needed
+
+    // Iterate through each button data and create buttons
+    data[0].buttons.forEach(buttonData => {
+        const button = document.createElement('button');
+        button.textContent = buttonData.title;
+        buttonContainer.appendChild(button);
+    });
+
+    // Apply CSS for button container to ensure buttons wrap instead of overflow
+    buttonContainer.style.display = 'flex';
+    buttonContainer.style.flexWrap = 'wrap';
+    buttonContainer.style.maxWidth = '100%'; // Adjust as needed
+
+    // Add margin between buttons for spacing
+    const buttonMargin = '5px';
+    buttonContainer.style.margin = `-${buttonMargin} 0 0 -${buttonMargin}`;
+
+    // Add the button container to the document body or any desired parent element
+    document.body.appendChild(buttonContainer);
+}
+
+// Call the function to generate buttons
+generateButtons();
