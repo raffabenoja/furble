@@ -91,6 +91,7 @@ progress { width: 100%; display:none }
     color: white;
     background-color: var(--bg-primary); 
     
+    z-index: 900 !important;
     transform: translateX(-100%);
     transition-property: transform;
     transition-duration: 0.3s;
