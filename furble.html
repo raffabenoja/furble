@@ -285,7 +285,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -311,7 +311,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -350,7 +350,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -376,7 +376,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -415,7 +415,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -441,33 +441,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
-                });
-            }
-        </script>
-
-        <script>
-            function triggerAction(a, b, c, d) {
-                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
-                // Add your action logic here
-            }
-
-            function gangnam() {
-                const actions = [
-                    [75, 0, 3, 1],
-                    [75, 0, 3, 2],
-                    [75, 0, 3, 3],
-                    [75, 0, 3, 4],
-                    [75, 0, 3, 5],
-                    [75, 0, 3, 6],
-                    [75, 0, 3, 7]
-                    // Add more actions as needed
-                ];
-
-                actions.forEach((action, index) => {
-                    setTimeout(() => {
-                        triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -493,7 +467,7 @@
                 actions.forEach((action, index) => {
                     setTimeout(() => {
                         triggerAction(...action);
-                    }, index * 500); // 1000ms = 1 second delay between actions
+                    }, index * 10000); // 1000ms = 1 second delay between actions
                 });
             }
         </script>
@@ -501,9 +475,6 @@
          <div class='row'>
             <button onclick='stillintoyou()'>Still Into You</button> 
             <button onclick='callmemaybe()'>Call Me Maybe</button>
-         </div>
-         <div class='row'>
-            <button onclick='gangnam()'>Gangnam Style</button>
             <button onclick='riptide()'>Riptide</button>
          </div>
          <!-- End experimental -->
