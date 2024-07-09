@@ -22,9 +22,13 @@
         <li><a href='#songs3'>DLC Buttons: Song Pack 3<br> <span style='font-size:10px;'> <i> Still Into You / Call Me Maybe / Riptide</i></span></a></li>
         <li><a href='#songs4'>DLC Buttons: Song Pack 4<br> <span style='font-size:10px;'> <i> Best Time Ever / Stay / Hanazuki / Call Me Maybe </i></span></a></li>
         <li><a href='#songs5'>DLC Buttons: Song Pack 5<br> <span style='font-size:10px;'> <i> Hanazuki / Call Me Maybe / The Sign / Gangnam Style</i></span></a></li>
+        <li><a href='#songs6'>DLC Buttons: Song Pack 6<br> <span style='font-size:10px;'> <i> Unsteady / Best Song Ever / Random Video Reactions</i></span></a></li>
+
 
         <li><a href='#dlcactions'>DLC Actions<br> <span style='font-size:10px;'> <i> DLC buttons appear here once DLC is activated</i></span></a></li>
         <li><a href='#actions'>Send Custom Actions<br> <span style='font-size:10px;'> <i> Random Actions / Octave Notes / Custom Commands</i></span></a></li>
+
+
         <li><a href='#shortcuts1'>Pre-built Actions 1<br> <span style='font-size:10px;'> <i> Birthday Song / Sleeping / Random Singing</i></span></a></li>
         <li><a href='#shortcuts2'>Pre-built Actions 2<br> <span style='font-size:10px;'> <i> Random Voices / Silent Dancing</i></span></a></li>
 
@@ -279,9 +283,28 @@
         <p style='margin-top:20px;'>Silent Dancing</p>
         <div class='row'>
             <button onclick='triggerAction(18,0,0,1)'>Dance 1</button>
-            <button onclick='triggerAction(18,0,0,4)'>Dance 2</button>
-            <button onclick='triggerAction(18,0,0,7)'>Dance 3</button>
-            <button onclick='triggerAction(18,0,0,17)'>Dance 4</button>
+            <button onclick='triggerAction(18,0,0,2)'>Dance 2</button>
+            <button onclick='triggerAction(18,0,0,3)'>Dance 3</button>
+            <button onclick='triggerAction(18,0,0,4)'>Dance 4</button>
+        </div>
+        <div class='row'>
+            <button onclick='triggerAction(18,0,0,5)'>Dance 5</button>
+            <button onclick='triggerAction(18,0,0,6)'>Dance 6</button>
+            <button onclick='triggerAction(18,0,0,7)'>Dance 7</button>
+            <button onclick='triggerAction(18,0,0,8)'>Dance 8</button>
+        </div>
+        <div class='row'>
+            <button onclick='triggerAction(18,0,0,9)'>Dance 9</button>
+            <button onclick='triggerAction(18,0,0,10)'>Dance 10</button>
+            <button onclick='triggerAction(18,0,0,11)'>Dance 11</button>
+            <button onclick='triggerAction(18,0,0,12)'>Dance 12</button>
+        </div>
+        <div class='row'>
+            <button onclick='triggerAction(18,0,0,13)'>Dance 13</button>
+            <button onclick='triggerAction(18,0,0,14)'>Dance 14</button>
+            <button onclick='triggerAction(18,0,0,15)'>Dance 15</button>
+            <button onclick='triggerAction(18,0,0,16)'>Dance 16</button>
+            <button onclick='triggerAction(18,0,0,17)'>Dance 17</button>
         </div>
     </section>
 
@@ -742,15 +765,15 @@
                 // Add your action logic here
             }
 
-            function birthdaycake() {
+            function gangnam() {
                 const actions = [
-                    [75, 0, 3, 1],
-                    [75, 0, 3, 2],
-                    [75, 0, 3, 3],
-                    [75, 0, 3, 4],
-                    [75, 0, 3, 5],
-                    [75, 0, 3, 6],
-                    [75, 0, 3, 7]
+                    [75, 0, 4, 1],
+                    [75, 0, 4, 2],
+                    [75, 0, 4, 3],
+                    [75, 0, 4, 4],
+                    [75, 0, 4, 5],
+                    [75, 0, 4, 6],
+                    [75, 0, 4, 7]
                     // Add more actions as needed
                 ];
 
@@ -762,37 +785,94 @@
             }
         </script>
 
-<script>
-    function triggerAction(a, b, c, d) {
-        console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
-        // Add your action logic here
-    }
-
-    function gangnam() {
-        const actions = [
-            [75, 0, 4, 1],
-            [75, 0, 4, 2],
-            [75, 0, 4, 3],
-            [75, 0, 4, 4],
-            [75, 0, 4, 5],
-            [75, 0, 4, 6],
-            [75, 0, 4, 7]
-            // Add more actions as needed
-        ];
-
-        actions.forEach((action, index) => {
-            setTimeout(() => {
-                triggerAction(...action);
-            }, index * 10000); // 1000ms = 1 second delay between actions
-        });
-    }
-</script>
-
          <div class='row'>
             <button onclick='callmemaybe3()'>Call Me Maybe</button> 
             <button onclick='thesign()'>The Sign</button>
             <button onclick='gangnam()'>Gangnam Style</button>
-            <button onclick='birthdaycake()'>Video: BDay Cake</button>
+         </div>
+
+         <p style='margin-top:20px;'>Random Soundbites</p>
+         <div class='row'>
+            <button onclick='triggerAction(75,0,3,1)'>Birthday</button>
+            <button onclick='triggerAction(75,0,3,4)'>Surprise</button>
+            <button onclick='triggerAction(75,0,3,5)'>Not Sorry</button>
+            <button onclick='triggerAction(75,0,3,6)'>Love Cake</button>
+         </div>
+         <!-- End experimental -->
+
+    </section>
+
+    <section id='songs6'>
+        <h2>Songs Pack 6:</h2>
+        <p>Only works if you have Songs Pack 6 DLC loaded</p>
+
+        <!-- Experimental -->
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+    
+            function unsteady() {
+                const actions = [
+                    [75, 0, 1, 2,], 
+                    [75, 0, 1, 3,], 
+                    [75, 0, 1, 4,], 
+                    [75, 0, 1, 5,]
+                    // Add more actions as needed
+                ];
+    
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function bestsongever() {
+                const actions = [
+                    [75, 0, 2, 1],
+                    [75, 0, 2, 2],
+                    [75, 0, 2, 3],
+                    [75, 0, 2, 4],
+                    [75, 0, 2, 5],
+                    [75, 0, 2, 6],
+                    [75, 0, 2, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+         <div class='row'>
+            <button onclick='unsteady()'>Unsteady</button> 
+            <button onclick='bestsongever()'>Best Song Ever</button>
+         </div>
+
+         <p style='margin-top:20px;'>Random Soundbites</p>
+         <div class='row'>
+            <button onclick='triggerAction(75,0,2,5)'>Wow Big</button>
+            <button onclick='triggerAction(75,0,3,2)'>Peaceful</button>
+            <button onclick='triggerAction(75,0,3,3)'>Sniff</button>
+            <button onclick='triggerAction(75,0,2,4)'>Italian?</button>
+         </div>
+         <div class='row'>
+            <button onclick='triggerAction(75,0,5,0)'>New Video</button>
+            <button onclick='triggerAction(75,0,5,7)'>Corgi Love</button>
+            <button onclick='triggerAction(75,0,5,5)'>Too Cool</button>
+            <button onclick='triggerAction(75,0,3,5)'>Evil Laugh</button>
          </div>
          <!-- End experimental -->
 
