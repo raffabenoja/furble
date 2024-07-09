@@ -84,7 +84,8 @@ progress { width: 100%; display:none }
 #status.ok { background-color: rgb(53, 185, 0) }
 
 #menu { 
-    position: fixed; 
+    position: absolute;
+    height: 200vh;
     left: 0; 
     top: 0; 
     bottom: 0; 
