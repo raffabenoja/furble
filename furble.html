@@ -20,8 +20,8 @@
         <li><a href='#songs1'>DLC Buttons: Song Pack 1<br> <span style='font-size:10px;'> <i> We Dont Talk Anymore / Party Rock / Make Some Noise</i></span></a></li>
         <li><a href='#songs2'>DLC Buttons: Song Pack 2<br> <span style='font-size:10px;'> <i> U Can't Touch This / Jingle Bell Rock / Down</i></span></a></li>
         <li><a href='#songs3'>DLC Buttons: Song Pack 3<br> <span style='font-size:10px;'> <i> Still Into You / Call Me Maybe / Riptide</i></span></a></li>
-        <li><a href='#songs4'>DLC Buttons: Song Pack 4<br> <span style='font-size:10px;'> <i> CallMeMaybe / TheSign / CakeByTheOcean / GangnamStyle / BestDayOfMyLife</i></span></a></li>
-        <li><a href='#songs5'>DLC Buttons: Song Pack 5<br> <span style='font-size:10px;'> <i> MakeSomeNoise / Starving / CallMeMaybe / TheSign / GangnamStyle</i></span></a></li>
+        <li><a href='#songs4'>DLC Buttons: Song Pack 4<br> <span style='font-size:10px;'> <i> Best Time Ever / Stay / Hanazuki / Call Me Maybe </i></span></a></li>
+        <li><a href='#songs5'>DLC Buttons: Song Pack 5<br> <span style='font-size:10px;'> <i> Hanazuki / Call Me Maybe / The Sign / Gangnam Style</i></span></a></li>
 
         <li><a href='#dlcactions'>DLC Actions<br> <span style='font-size:10px;'> <i> DLC buttons appear here once DLC is activated</i></span></a></li>
         <li><a href='#actions'>Send Custom Actions<br> <span style='font-size:10px;'> <i> Random Actions / Octave Notes / Custom Commands</i></span></a></li>
@@ -71,13 +71,11 @@
         <div class='row' id='dlc-actions' style='max-width:100% !important;'></div>
 
         <p>Send custom DLC actions.</p>
-        <div class='row' style='max-width:95% !important;'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
-        </div>
-        <div class="row">
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
     </section>
@@ -114,10 +112,10 @@
         <p>For the full list of commands, <a href="https://github.com/Jeija/bluefluff/blob/master/doc/actionlist.md" target=”_blank”> click here</a></p>
         <p>Send Custom Commands</p>
         <div class='row'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
 
@@ -385,16 +383,14 @@
             <button onclick='makesomenoise()'>Make Some Noise</button>
          </div>
 
-         <p>Send custom DLC actions.</p>
-         <div class='row' style='max-width:95% !important;'>
-             <input type='number' min='0' max='75' name='furby-action' value='75'>
-             <input type='number' min='0' max='4' name='furby-action' value='0'>
-             <input type='number' min='0' max='30' name='furby-action' value='1'>
-             <input type='number' min='0' max='10' name='furby-action' value='1'>
-         </div>
-         <div class="row">
-             <button onclick='customAction()'>Send</button>
-         </div>
+         <p>Send Custom Commands</p>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
+            <input type='number' min='0' max='4' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
+            <button onclick='customAction()'>Send</button>
+        </div>
          <!-- End experimental -->
 
     </section>
@@ -488,14 +484,12 @@
             <button onclick='down()'>Down</button>
          </div>
 
-         <p>Send custom DLC actions.</p>
-         <div class='row' style='max-width:95% !important;'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+         <p>Send Custom Commands</p>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
-        </div>
-        <div class="row">
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
          <!-- End experimental -->
@@ -591,14 +585,12 @@
             <button onclick='riptide()'>Riptide</button>
          </div>
 
-         <p>Send custom DLC actions.</p>
-         <div class='row' style='max-width:95% !important;'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+         <p>Send Custom Commands</p>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
-        </div>
-        <div class="row">
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
          <!-- End experimental -->
@@ -616,7 +608,7 @@
                 // Add your action logic here
             }
     
-            function stillintoyou() {
+            function besttime() {
                 const actions = [
                     [75, 0, 1, 1,], 
                     [75, 0, 1, 2,], 
@@ -642,7 +634,7 @@
                 // Add your action logic here
             }
 
-            function callmemaybe() {
+            function stay() {
                 const actions = [
                     [75, 0, 2, 1],
                     [75, 0, 2, 2],
@@ -668,7 +660,33 @@
                 // Add your action logic here
             }
 
-            function riptide() {
+            function hanazuki() {
+                const actions = [
+                    [75, 0, 3, 1],
+                    [75, 0, 3, 2],
+                    [75, 0, 3, 3],
+                    [75, 0, 3, 4],
+                    [75, 0, 3, 5],
+                    [75, 0, 3, 6],
+                    [75, 0, 3, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function callmemaybe2() {
                 const actions = [
                     [75, 0, 4, 1],
                     [75, 0, 4, 2],
@@ -689,19 +707,18 @@
         </script>
 
          <div class='row'>
-            <button onclick='stillintoyou()'>Still Into You</button> 
-            <button onclick='callmemaybe()'>Call Me Maybe</button>
-            <button onclick='riptide()'>Riptide</button>
+            <button onclick='besttime()'>Best Time Ever</button> 
+            <button onclick='stay()'>Stay</button>
+            <button onclick='hanazuki()'>Hanazuki</button>
+            <button onclick='callmemaybe2()'>Call Me Maybe</button>
          </div>
 
-         <p>Send custom DLC actions.</p>
-         <div class='row' style='max-width:95% !important;'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+         <p>Send Custom Commands</p>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='39'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
-        </div>
-        <div class="row">
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
          <!-- End experimental -->
@@ -719,7 +736,7 @@
                 // Add your action logic here
             }
     
-            function stillintoyou() {
+            function callmemaybe3() {
                 const actions = [
                     [75, 0, 1, 1,], 
                     [75, 0, 1, 2,], 
@@ -745,7 +762,7 @@
                 // Add your action logic here
             }
 
-            function callmemaybe() {
+            function thesign() {
                 const actions = [
                     [75, 0, 2, 1],
                     [75, 0, 2, 2],
@@ -771,15 +788,15 @@
                 // Add your action logic here
             }
 
-            function riptide() {
+            function birthdaycake() {
                 const actions = [
-                    [75, 0, 4, 1],
-                    [75, 0, 4, 2],
-                    [75, 0, 4, 3],
-                    [75, 0, 4, 4],
-                    [75, 0, 4, 5],
-                    [75, 0, 4, 6],
-                    [75, 0, 4, 7]
+                    [75, 0, 3, 1],
+                    [75, 0, 3, 2],
+                    [75, 0, 3, 3],
+                    [75, 0, 3, 4],
+                    [75, 0, 3, 5],
+                    [75, 0, 3, 6],
+                    [75, 0, 3, 7]
                     // Add more actions as needed
                 ];
 
@@ -791,20 +808,45 @@
             }
         </script>
 
+<script>
+    function triggerAction(a, b, c, d) {
+        console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+        // Add your action logic here
+    }
+
+    function gangnam() {
+        const actions = [
+            [75, 0, 4, 1],
+            [75, 0, 4, 2],
+            [75, 0, 4, 3],
+            [75, 0, 4, 4],
+            [75, 0, 4, 5],
+            [75, 0, 4, 6],
+            [75, 0, 4, 7]
+            // Add more actions as needed
+        ];
+
+        actions.forEach((action, index) => {
+            setTimeout(() => {
+                triggerAction(...action);
+            }, index * 10000); // 1000ms = 1 second delay between actions
+        });
+    }
+</script>
+
          <div class='row'>
-            <button onclick='stillintoyou()'>Still Into You</button> 
-            <button onclick='callmemaybe()'>Call Me Maybe</button>
-            <button onclick='riptide()'>Riptide</button>
+            <button onclick='callmemaybe3()'>Call Me Maybe</button> 
+            <button onclick='thesign()'>The Sign</button>
+            <button onclick='gangnam()'>Gangnam Style</button>
+            <button onclick='birthdaycake()'>Video: BDay Cake</button>
          </div>
 
-         <p>Send custom DLC actions.</p>
-         <div class='row' style='max-width:95% !important;'>
-            <input type='number' min='0' max='75' name='furby-action' value='75'>
+         <p>Send Custom Commands</p>
+        <div class='row'>
+            <input type='number' min='0' max='75' name='furby-action' value='8'>
             <input type='number' min='0' max='4' name='furby-action' value='0'>
-            <input type='number' min='0' max='30' name='furby-action' value='1'>
-            <input type='number' min='0' max='10' name='furby-action' value='1'>
-        </div>
-        <div class="row">
+            <input type='number' min='0' max='30' name='furby-action' value='0'>
+            <input type='number' min='0' max='10' name='furby-action' value='0'>
             <button onclick='customAction()'>Send</button>
         </div>
          <!-- End experimental -->
