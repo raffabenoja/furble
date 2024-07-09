@@ -81,6 +81,125 @@
         ]
     },
     {
+        "file": "tu011840.dlc",
+        "title": "Songs Pack 4",
+        "buttons": [
+            // CallMeMaybe Actions
+            { "title": "CMM1", "action": [75, 0, 1, 3] },
+            { "title": "CMM2", "action": [75, 0, 1, 4] },
+            { "title": "CMM3", "action": [75, 0, 1, 5] },
+    
+            // Hanazuki Actions
+            { "title": "HZ1", "action": [75, 0, 0, 2] },
+            { "title": "HZ2", "action": [75, 0, 0, 3] },
+            { "title": "HZ3", "action": [75, 0, 0, 4] },
+            { "title": "HZ4", "action": [75, 0, 0, 5] },
+            { "title": "HZ5", "action": [75, 0, 0, 6] },
+    
+            // TheSign Actions
+            { "title": "TS1", "action": [75, 0, 2, 3] },
+            { "title": "TS2", "action": [75, 0, 2, 4] },
+            { "title": "TS3", "action": [75, 0, 2, 5] },
+    
+            // BirthdayCake Actions
+            { "title": "BDC1", "action": [75, 0, 3, 2] },
+            { "title": "BDC2", "action": [75, 0, 3, 3] },
+            { "title": "BDC3", "action": [75, 0, 3, 4] },
+            { "title": "BDC4", "action": [75, 0, 3, 5] },
+            { "title": "BDC5", "action": [75, 0, 3, 6] },
+    
+            // GangnamStyle Actions
+            { "title": "GS1", "action": [75, 0, 4, 3] },
+            { "title": "GS2", "action": [75, 0, 4, 4] },
+            { "title": "GS3", "action": [75, 0, 4, 5] },
+    
+            // CakeByTheOcean Actions
+            { "title": "CBTO1", "action": [75, 0, 2, 3] },
+            { "title": "CBTO2", "action": [75, 0, 2, 4] },
+            { "title": "CBTO3", "action": [75, 0, 2, 5] },
+    
+            // PirateCaptain Actions
+            { "title": "PC1", "action": [75, 0, 3, 2] },
+            { "title": "PC2", "action": [75, 0, 3, 3] },
+            { "title": "PC3", "action": [75, 0, 3, 4] },
+            { "title": "PC4", "action": [75, 0, 3, 5] },
+            { "title": "PC5", "action": [75, 0, 3, 6] },
+    
+            // BestDayOfMyLife Actions
+            { "title": "BDOML1", "action": [75, 0, 4, 3] },
+            { "title": "BDOML2", "action": [75, 0, 4, 4] },
+            { "title": "BDOML3", "action": [75, 0, 4, 5] }
+        ]
+    },
+    {
+        "file": "tu011880.dlc",
+        "title": "Songs Pack 5",
+        "buttons": [
+            // BoyWeightLifter Actions
+            { "title": "BWL1", "action": [75, 0, 0, 2] },
+            { "title": "BWL2", "action": [75, 0, 0, 3] },
+            { "title": "BWL3", "action": [75, 0, 0, 4] },
+            { "title": "BWL4", "action": [75, 0, 0, 5] },
+            { "title": "BWL5", "action": [75, 0, 0, 6] },
+    
+            // MakeSomeNoise Actions
+            { "title": "MSN1", "action": [75, 0, 1, 3] },
+            { "title": "MSN2", "action": [75, 0, 1, 4] },
+            { "title": "MSN3", "action": [75, 0, 1, 5] },
+    
+            // Starving Actions
+            { "title": "S1", "action": [75, 0, 2, 3] },
+            { "title": "S2", "action": [75, 0, 2, 4] },
+            { "title": "S3", "action": [75, 0, 2, 5] },
+    
+            // PommelMushroom Actions
+            { "title": "PM1", "action": [75, 0, 0, 2] },
+            { "title": "PM2", "action": [75, 0, 0, 3] },
+            { "title": "PM3", "action": [75, 0, 0, 4] },
+            { "title": "PM4", "action": [75, 0, 0, 5] },
+            { "title": "PM5", "action": [75, 0, 0, 6] },
+    
+            // BestTimeEver Actions
+            { "title": "BTE1", "action": [75, 0, 1, 3] },
+            { "title": "BTE2", "action": [75, 0, 1, 4] },
+            { "title": "BTE3", "action": [75, 0, 1, 5] },
+    
+            // Stay Actions
+            { "title": "St1", "action": [75, 0, 2, 3] },
+            { "title": "St2", "action": [75, 0, 2, 4] },
+            { "title": "St3", "action": [75, 0, 2, 5] },
+    
+            // Hanazuki Actions
+            { "title": "HZ1", "action": [75, 0, 3, 2] },
+            { "title": "HZ2", "action": [75, 0, 3, 3] },
+            { "title": "HZ3", "action": [75, 0, 3, 4] },
+            { "title": "HZ4", "action": [75, 0, 3, 5] },
+            { "title": "HZ5", "action": [75, 0, 3, 6] },
+    
+            // CallMeMaybe Actions
+            { "title": "CMM1", "action": [75, 0, 4, 3] },
+            { "title": "CMM2", "action": [75, 0, 4, 4] },
+            { "title": "CMM3", "action": [75, 0, 4, 5] },
+    
+            // TheSign Actions
+            { "title": "TS1", "action": [75, 0, 2, 3] },
+            { "title": "TS2", "action": [75, 0, 2, 4] },
+            { "title": "TS3", "action": [75, 0, 2, 5] },
+    
+            // BirthdayCake Actions
+            { "title": "BDC1", "action": [75, 0, 3, 2] },
+            { "title": "BDC2", "action": [75, 0, 3, 3] },
+            { "title": "BDC3", "action": [75, 0, 3, 4] },
+            { "title": "BDC4", "action": [75, 0, 3, 5] },
+            { "title": "BDC5", "action": [75, 0, 3, 6] },
+    
+            // GangnamStyle Actions
+            { "title": "GS1", "action": [75, 0, 4, 3] },
+            { "title": "GS2", "action": [75, 0, 4, 4] },
+            { "title": "GS3", "action": [75, 0, 4, 5] }
+        ]
+    },    
+    {
         "file": "Orks.dlc", 
         "title": "Orks",
         "buttons": [
