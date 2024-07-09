@@ -20,6 +20,8 @@
         <li><a href='#songs1'>DLC Buttons: Song Pack 1<br> <span style='font-size:10px;'> <i> We Dont Talk Anymore / Party Rock / Make Some Noise</i></span></a></li>
         <li><a href='#songs2'>DLC Buttons: Song Pack 2<br> <span style='font-size:10px;'> <i> U Can't Touch This / Jingle Bell Rock / Down</i></span></a></li>
         <li><a href='#songs3'>DLC Buttons: Song Pack 3<br> <span style='font-size:10px;'> <i> Still Into You / Call Me Maybe / Riptide</i></span></a></li>
+        <li><a href='#songs4'>DLC Buttons: Song Pack 4<br> <span style='font-size:10px;'> <i> CallMeMaybe / TheSign / CakeByTheOcean / GangnamStyle / BestDayOfMyLife</i></span></a></li>
+        <li><a href='#songs5'>DLC Buttons: Song Pack 5<br> <span style='font-size:10px;'> <i> MakeSomeNoise / Starving / CallMeMaybe / TheSign / GangnamStyle</i></span></a></li>
 
         <li><a href='#dlcactions'>DLC Actions<br> <span style='font-size:10px;'> <i> DLC buttons appear here once DLC is activated</i></span></a></li>
         <li><a href='#actions'>Send Custom Actions<br> <span style='font-size:10px;'> <i> Random Actions / Octave Notes / Custom Commands</i></span></a></li>
@@ -503,6 +505,212 @@
     <section id='songs3'>
         <h2>Songs Pack 3:</h2>
         <p>Only works if you have Songs Pack 3 DLC loaded</p>
+
+        <!-- Experimental -->
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+    
+            function stillintoyou() {
+                const actions = [
+                    [75, 0, 1, 1,], 
+                    [75, 0, 1, 2,], 
+                    [75, 0, 1, 3,], 
+                    [75, 0, 1, 4,], 
+                    [75, 0, 1, 5,], 
+                    [75, 0, 1, 6,], 
+                    [75, 0, 1, 7,] 
+                    // Add more actions as needed
+                ];
+    
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function callmemaybe() {
+                const actions = [
+                    [75, 0, 2, 1],
+                    [75, 0, 2, 2],
+                    [75, 0, 2, 3],
+                    [75, 0, 2, 4],
+                    [75, 0, 2, 5],
+                    [75, 0, 2, 6],
+                    [75, 0, 2, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function riptide() {
+                const actions = [
+                    [75, 0, 4, 1],
+                    [75, 0, 4, 2],
+                    [75, 0, 4, 3],
+                    [75, 0, 4, 4],
+                    [75, 0, 4, 5],
+                    [75, 0, 4, 6],
+                    [75, 0, 4, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+         <div class='row'>
+            <button onclick='stillintoyou()'>Still Into You</button> 
+            <button onclick='callmemaybe()'>Call Me Maybe</button>
+            <button onclick='riptide()'>Riptide</button>
+         </div>
+
+         <p>Send custom DLC actions.</p>
+         <div class='row' style='max-width:95% !important;'>
+            <input type='number' min='0' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='4' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+        </div>
+        <div class="row">
+            <button onclick='customAction()'>Send</button>
+        </div>
+         <!-- End experimental -->
+
+    </section>
+
+    <section id='songs4'>
+        <h2>Songs Pack 4:</h2>
+        <p>Only works if you have Songs Pack 4 DLC loaded</p>
+
+        <!-- Experimental -->
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+    
+            function stillintoyou() {
+                const actions = [
+                    [75, 0, 1, 1,], 
+                    [75, 0, 1, 2,], 
+                    [75, 0, 1, 3,], 
+                    [75, 0, 1, 4,], 
+                    [75, 0, 1, 5,], 
+                    [75, 0, 1, 6,], 
+                    [75, 0, 1, 7,] 
+                    // Add more actions as needed
+                ];
+    
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function callmemaybe() {
+                const actions = [
+                    [75, 0, 2, 1],
+                    [75, 0, 2, 2],
+                    [75, 0, 2, 3],
+                    [75, 0, 2, 4],
+                    [75, 0, 2, 5],
+                    [75, 0, 2, 6],
+                    [75, 0, 2, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+        <script>
+            function triggerAction(a, b, c, d) {
+                console.log(`Action triggered with values: ${a}, ${b}, ${c}, ${d}`);
+                // Add your action logic here
+            }
+
+            function riptide() {
+                const actions = [
+                    [75, 0, 4, 1],
+                    [75, 0, 4, 2],
+                    [75, 0, 4, 3],
+                    [75, 0, 4, 4],
+                    [75, 0, 4, 5],
+                    [75, 0, 4, 6],
+                    [75, 0, 4, 7]
+                    // Add more actions as needed
+                ];
+
+                actions.forEach((action, index) => {
+                    setTimeout(() => {
+                        triggerAction(...action);
+                    }, index * 10000); // 1000ms = 1 second delay between actions
+                });
+            }
+        </script>
+
+         <div class='row'>
+            <button onclick='stillintoyou()'>Still Into You</button> 
+            <button onclick='callmemaybe()'>Call Me Maybe</button>
+            <button onclick='riptide()'>Riptide</button>
+         </div>
+
+         <p>Send custom DLC actions.</p>
+         <div class='row' style='max-width:95% !important;'>
+            <input type='number' min='0' max='75' name='furby-action' value='75'>
+            <input type='number' min='0' max='4' name='furby-action' value='0'>
+            <input type='number' min='0' max='30' name='furby-action' value='1'>
+            <input type='number' min='0' max='10' name='furby-action' value='1'>
+        </div>
+        <div class="row">
+            <button onclick='customAction()'>Send</button>
+        </div>
+         <!-- End experimental -->
+
+    </section>
+
+    <section id='songs5'>
+        <h2>Songs Pack 5:</h2>
+        <p>Only works if you have Songs Pack 5 DLC loaded</p>
 
         <!-- Experimental -->
         <script>
