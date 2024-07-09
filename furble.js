@@ -143,6 +143,48 @@ function customAction() {
     console.log(args);
     triggerAction.apply(null, args);
 }
+function customAction1() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction2() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction3() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction4() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction5() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction6() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
+function customAction7() {
+    let args = [];
+    document.querySelectorAll('input[name=furby-action]').forEach(el => args.push(parseInt(el.value)));
+    console.log(args);
+    triggerAction.apply(null, args);
+}
 function enableEyes(b) {
     return sendGPCmd([0xcd, b ? 1 : 0], NO_RESPONSE);
 }
