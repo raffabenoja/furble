@@ -149,6 +149,40 @@
         ]
     },    
     {
+        "file": "tu022060.dlc",
+        "title": "Songs Pack 6",
+        "buttons": [
+            { "title": "a1", "action": [75, 0, 1, 1] },
+            { "title": "a2", "action": [75, 0, 1, 2] },
+            { "title": "a3", "action": [75, 0, 1, 3] }, 
+            { "title": "a4", "action": [75, 0, 1, 4] }, 
+            { "title": "a5", "action": [75, 0, 1, 5] }, 
+            { "title": "a6", "action": [75, 0, 1, 6] }, 
+            { "title": "a7", "action": [75, 0, 1, 7] }, 
+            { "title": "b1", "action": [75, 0, 2, 1] },
+            { "title": "b2", "action": [75, 0, 2, 2] },
+            { "title": "b3", "action": [75, 0, 2, 3] },
+            { "title": "b4", "action": [75, 0, 2, 4] },
+            { "title": "b5", "action": [75, 0, 2, 5] },
+            { "title": "b6", "action": [75, 0, 2, 6] },
+            { "title": "b7", "action": [75, 0, 2, 7] },
+            { "title": "c1", "action": [75, 0, 3, 1] },
+            { "title": "c2", "action": [75, 0, 3, 2] },
+            { "title": "c3", "action": [75, 0, 3, 3] },
+            { "title": "c4", "action": [75, 0, 3, 4] },
+            { "title": "c5", "action": [75, 0, 3, 5] },
+            { "title": "c6", "action": [75, 0, 3, 6] },
+            { "title": "c7", "action": [75, 0, 3, 7] },
+            { "title": "d1", "action": [75, 0, 4, 1] },
+            { "title": "d2", "action": [75, 0, 4, 2] },
+            { "title": "d3", "action": [75, 0, 4, 3] },
+            { "title": "d4", "action": [75, 0, 4, 4] },
+            { "title": "d5", "action": [75, 0, 4, 5] },
+            { "title": "d6", "action": [75, 0, 4, 6] },
+            { "title": "d7", "action": [75, 0, 4, 7] }
+        ]
+    },    
+    {
         "file": "Orks.dlc", 
         "title": "Orks",
         "buttons": [
