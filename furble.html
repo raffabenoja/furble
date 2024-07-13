@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Raff's Custom Furby Web Bluetooth :) </title>
+    <title>Raff's Custom Furby Web Bluetooth</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='furble.css'>
 </head>
@@ -83,7 +83,13 @@
             <button onclick='triggerAction(39,3,1,1)'>Hey!</button>
             <button onclick='triggerAction(8,0,0,0)'>Yaaas</button>
         </div>
-
+        
+        <p style='font-size:10px; color:#dedede;'>
+            Do, Do, Re, Do, Fa, Mi <span style='margin-right:30px;'></span>
+            Do, Do, Re, Do, Sol, Fa <br>
+            Do, Do, Do, La, Fa, Mi, Re <span style='margin-right:30px;'></span>
+            Ti, Ti, La, Fa, Sol, Fa
+        </p>
         <h2>Solfège Syllables</h2>
         <div class='row'>
             <button onclick='triggerAction(71,0,0,0)'>Do</button>
@@ -97,12 +103,6 @@
             <button onclick='triggerAction(71,0,0,6)'>Ti</button>
             <button onclick='triggerAction(71,0,0,7)'>Do</button>
         </div>
-        <p style='font-size:10px; color:#dedede;'>
-            Do, Do, Re, Do, Fa, Mi <span style='margin-right:30px;'></span>
-            Do, Do, Re, Do, Sol, Fa <br>
-            Do, Do, Do, La, Fa, Mi, Re <span style='margin-right:30px;'></span>
-            Ti, Ti, La, Fa, Sol, Fa
-        </p>
 
         <p>For the full list of commands, <a href="https://github.com/Jeija/bluefluff/blob/master/doc/actionlist.md" target=”_blank”> click here</a></p>
         <div class='row'>
@@ -148,9 +148,7 @@
                 const actions = [
                     // Do, Do, Re, Do, Fa, Mi
                     [71, 0, 0, 0], //Do
-                    
                     [71, 0, 0, 1], //Re
-                    
                     [71, 0, 0, 3], //Fa
                     
                     // Do, Do, Re, Do, Sol, Fa
